@@ -1,3 +1,7 @@
+package elevator;
+
+import elevator.Elevator;
+
 import java.util.Scanner;
 
 public class ElevatorMain {
@@ -18,7 +22,7 @@ public class ElevatorMain {
         System.out.println(" enter 4 to close the door ");
         System.out.println("enter 5 to set floor");
         System.out.println("enter 6 to see door state");
-        //Elevator elevator = new Elevator(20);
+        //elevator.Elevator elevator = new elevator.Elevator(20);
         Elevator elevator = new Elevator(true, 10, 25);
 
         Scanner keyboard;

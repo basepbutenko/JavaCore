@@ -1,3 +1,5 @@
+package elevator;
+
 public class Elevator {
 
     public static final String ELEVATOR_MANUFACTURER = "Samsung"; // статическая переменная
