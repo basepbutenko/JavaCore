@@ -4,8 +4,12 @@ import java.util.ArrayList;
 
 public class KitchenDemo {
     public static void main(String[] args) {
-        Camera camera = new Camera();
-        Fridge fridge = new Fridge();
+
+        Counter counter = new CounterImpl();
+        Camera camera = new Camera(counter);
+
+        Fridge fridge = new Fridge(new CounterImpl());
+
         CoffeMaker coffeMaker = new CoffeMaker();
         MicroWaveOven microWaveOven = new MicroWaveOven();
         Oven oven = new Oven();
@@ -36,6 +40,9 @@ public class KitchenDemo {
             lucent.light();
         }
 
+        User user = new User(camera);
+        user.doWork(fridge);
+        camera.light();
 
     }
 
