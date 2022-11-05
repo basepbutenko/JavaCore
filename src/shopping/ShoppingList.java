@@ -3,9 +3,9 @@ package shopping;
 import java.util.ArrayList;
 
 public class ShoppingList {
-    ArrayList<String> items = new ArrayList<>();
+    ArrayList<Product> items = new ArrayList<>();
 
-    public void add(String item) {
+    public void add(Product item) {
         this.items.add(item);
     }
     public void delete (int index) {
@@ -14,7 +14,7 @@ public class ShoppingList {
     }
 
     public void display() {
-        for (String s : items) {
+        for (Product s : items) {
             System.out.println(s);
         }
     }

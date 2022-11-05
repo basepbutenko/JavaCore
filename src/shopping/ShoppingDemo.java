@@ -22,7 +22,11 @@ public class ShoppingDemo {
                 case COMMAND_ADD:
                     System.out.println("enter item");
                     String name = keyboard.next();
-                    shoppingList.add(name);
+                    System.out.println("enter count");
+                    int count = keyboard.nextInt();
+                    System.out.println("enter description");
+                    String descriotion = keyboard.next();
+                    shoppingList.add(new Product(name,descriotion,count));
                     break;
                 case COMMAND_DELETE:
                     System.out.println("index");
