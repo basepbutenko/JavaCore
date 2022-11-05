@@ -22,12 +22,14 @@ public class ShoppingDemo {
                 case COMMAND_ADD:
                     System.out.println("enter item");
                     String name = keyboard.next();
-                    shoppingList.add(name);
+                    System.out.println("enter count");
+                    Integer count = keyboard.nextInt();
+                    shoppingList.add(name, count);
                     break;
                 case COMMAND_DELETE:
-                    System.out.println("index");
-                    Integer index = keyboard.nextInt();
-                    shoppingList.delete(index);
+                    System.out.println("name");
+                    String nameOfElementToDelete = keyboard.next();
+                    shoppingList.delete(nameOfElementToDelete);
                     break;
                 case COMMAND_DISPLAY:
                     shoppingList.display();
