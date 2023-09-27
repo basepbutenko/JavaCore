@@ -1,7 +1,5 @@
 package calculator;
 
-import calculator.Calculator;
-
 public class CalculatorMain {
     public static final int COMMAND = 0;
 
