@@ -70,6 +70,6 @@ public class Student implements Serializable {
  * 4 создаем toString
  * 5 создаем геттеры и сеттеры с тем же сочетанием клавишь
  * 6 создаем equals and HashCode
- * 7 далее переходим в класс Main
+ * 7 далее переходим в класс Another.Main
  * 8 УЧТИ!!! Если не реализовать интерфейс implements Serializable будет ошибка
  */
