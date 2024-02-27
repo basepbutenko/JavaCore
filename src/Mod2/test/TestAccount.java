@@ -10,5 +10,6 @@ public class TestAccount {
         myAccount.withdraw(380);
         myAccount.withdraw(500);
         System.out.println("Account balance is $" + myAccount.getBalance());
+        System.out.println("Hello");
     }
 }
