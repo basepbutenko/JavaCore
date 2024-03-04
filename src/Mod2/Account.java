@@ -1,10 +1,10 @@
-package Mod2.domain;
+package Mod2;
 /**
  * Bank Account class
  * @author OleksiiB
  */
 public class Account {
-    private double balance;
+    protected double balance;
 
     /**
      * constructor - assigns the initial balance value
@@ -19,16 +19,24 @@ public class Account {
             this.balance = 0;
         }
     }
+
+    public Account() {
+
+    }
+
     // The amount we deposit account must exceed the balance (сумма, которую мы вносим на счет,
     // должна превышать баланс)
     /**
      * @param amt a positive amount of money
      */
-    public void deposit (double amt){
+    public boolean deposit (double amt){
         if (amt>0){
             balance+=amt;
+            return true;
         }
+        return false;
     }
+
 
     /**
      * Methot to withdraw money
@@ -36,10 +44,12 @@ public class Account {
      */
     // The amount we deposit account must not exceed the balance
     // (сумма, которую мы вносим на счет, должна превышать баланс)
-    public void withdraw (double amt){
+    public boolean withdraw (int amt){
         if (amt<=0){
             balance-=amt;
+            return true;
         }
+        return false;
     }
 
     /**
@@ -49,4 +59,6 @@ public class Account {
         public double getBalance () {
             return balance;
         }
-    }
+
+
+}
