@@ -1,8 +1,8 @@
 package Mod2;
 
 public class Bank {
-    private static Customer[] customers;
-    private static int numofClients;
+    private static Customer[] customers = new Customer[1000];
+    private static int numofClients = 0;
     static {
         customers = new Customer[10]; // Инициализация массива на 10 элементов (вы можете выбрать другой размер)
         numofClients = 0;

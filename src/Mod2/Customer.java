@@ -25,17 +25,17 @@ public class Customer {
 
     @Override
     public String toString() {
-        StringBuilder s = new StringBuilder("Customer{" +
-                "fullName='" + fullName + '\'' +
-                ", CustomerNumber=" + CustomerNumber +
-                ", numofAccounts=" + numofAccounts +
-                "}\n");
+        StringBuilder s = new StringBuilder("Customer " +
+                "fullName= '" + fullName + '\'' +
+                ", CustomerNumber= " + CustomerNumber +
+                ", numofAccounts= " + numofAccounts +
+                "\n");
 
         for (int i = 0; i < numofAccounts; i++) {
             Account acc = getAccount(i);
             if (acc != null) {
                 if (acc instanceof SavingAccount)
-                    s.append("Savings account with interest rate %").append(((SavingAccount) acc).getInterestRate());
+                    s.append( "Savings account with interest rate % ").append(((SavingAccount) acc).getInterestRate());
                 else if (acc instanceof CheckingAccount)
                     s.append("Checking account with overdraft %").append(((CheckingAccount) acc).getOverdraftAmount());
                 s.append(", balance $").append(acc.getBalance()).append("\n");
