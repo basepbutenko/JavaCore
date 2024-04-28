@@ -12,7 +12,7 @@ public class TaskLoop {
         String color = "red";
         Scanner in = new Scanner(System.in);
 
-        while (attempt<MAX_ATTEMPT){
+        while (attempt<=MAX_ATTEMPT){
             attempt++;
             System.out.println("attempt "+ attempt + ":");
             String value = in.next();

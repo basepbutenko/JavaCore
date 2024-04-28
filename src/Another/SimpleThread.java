@@ -10,7 +10,8 @@ public class SimpleThread extends Thread {
         Thread t = new Thread(new SimpleThread());
         // далее по ссылке t вызываем метод старт
         t.start();
-        // после наследования класса Course4.Course4.Course4.Lesson1.Thread нужно переопределить метод Run, нажав ctrl+O или command+N
+        // после наследования класса Course4.Course4.Course4.Lesson1.Thread нужно переопределить метод Run, нажав ctrl+O
+        // или command+N
 
         // создаем объекты, чтобы посмотреть как работает метод Run
         ArrayList al = new ArrayList();
