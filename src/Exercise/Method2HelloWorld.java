@@ -11,7 +11,7 @@ public class Method2HelloWorld {
     }
     public static void main(String[] args) {
         Method2HelloWorld mtd = new Method2HelloWorld();
-        mtd.firstWord("2");
+        mtd.firstWord("Helli");
 
     }
 }

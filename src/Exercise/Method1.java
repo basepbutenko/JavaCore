@@ -2,7 +2,7 @@ package Exercise;
 
 public class Method1 {
     static String procedure (){
-        return "Hello";
+        return "Hello World";
 
     }
 

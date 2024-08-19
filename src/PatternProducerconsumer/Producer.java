@@ -9,7 +9,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /*
 это первый класс который создается и в нем создаем приватную файнал переменную типа
-1  LinkedBlockingQueue<String>queue private final AtomicBoolean stop;
+1  LinkedBlockingQueue<String>queue
+    private final AtomicBoolean stop;
     private String producerName;
     private ExecutorService executorService= Executors.newSingleThreadExecutor();
  2  create Constructor  с тремя параметрами LinkedBlockingQueue<String> queue, AtomicBoolean stop, String producerName

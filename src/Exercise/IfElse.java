@@ -38,8 +38,8 @@ public class IfElse {
             if(password.equals(userPassword)){
                 System.out.println("Congratulate!!! You password was correct. Welcome to ACCOUNT");
             }else {
-                System.out.println("Your password does not correct");
+                System.out.println("Your password is not correct");
         }}else {
-                System.out.println("Your password does not correct");
+                System.out.println("Your password is not correct");
             }
     }}
